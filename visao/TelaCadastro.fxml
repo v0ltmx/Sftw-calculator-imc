@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cadastrar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorIMC">
+   <children>
+      <Label layoutX="231.0" layoutY="14.0" text="Calculadora de IMC">
+         <font>
+            <Font name="Segoe UI Light" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton id="cadastrar" fx:id="cadastrarButton" layoutX="272.0" layoutY="333.0" ripplerFill="#4959a9" text="Cadastrar" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextArea id="nome" fx:id="nomeCad" labelFloat="true" layoutX="106.0" layoutY="97.0" prefHeight="36.0" prefWidth="249.0" promptText="Nome">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXComboBox id="sexo" fx:id="sexoCad" labelFloat="true" layoutX="414.0" layoutY="119.0" prefHeight="25.0" prefWidth="87.0" promptText="Sexo" />
+      <JFXTextField id="peso" fx:id="pesoCad" labelFloat="true" layoutX="106.0" layoutY="175.0" promptText="Peso">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="altura" fx:id="alturarCad" labelFloat="true" layoutX="106.0" layoutY="243.0" prefHeight="29.0" prefWidth="165.0" promptText="Altura">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="idadeCad" layoutX="366.0" layoutY="188.0" text="Idade" />
+      <JFXDatePicker fx:id="dataCad" defaultColor="#4059a9" layoutX="366.0" layoutY="245.0" promptText="Insira a data da consulta" />
+   </children>
+</AnchorPane>
