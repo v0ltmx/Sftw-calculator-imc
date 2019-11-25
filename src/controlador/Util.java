@@ -38,3 +38,31 @@ public class Util {
         dialog.show();
     }
 }
+/*
+private StringConverter<LocalDate> data(){
+        
+        String pattern = "yyyy-MM-dd";
+        StringConverter<LocalDate> converter = new StringConverter<LocalDate>(){
+            DateTimeFormatter formatar = DateTimeFormatter.ofPattern(pattern);
+
+            @Override
+            public String toString(LocalDate date) {
+                if(date != null){
+                    return formatar.format(date);
+                }else{
+                    return "";
+                }
+            }
+
+            @Override
+            public LocalDate fromString(String string) {
+                if(string != null && !string.isEmpty()){
+                    return LocalDate.parse(string,formatar);
+                }else{
+                    return null;
+                }
+            }
+            
+        };
+        return converter;
+    }/*
