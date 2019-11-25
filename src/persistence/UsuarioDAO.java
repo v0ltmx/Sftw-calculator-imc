@@ -91,7 +91,6 @@ public class UsuarioDAO {
     
     public boolean deleteUsuario(Usuario u){
         try{
-            
             con.conecta();
             PreparedStatement preparaInstrucao;
             preparaInstrucao = con.getConexao().prepareStatement(DELETEUSUARIO);
