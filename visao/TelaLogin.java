@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package visao;
 
-/**
- *
- * @author Lucas
- */
+
 public class TelaLogin extends javax.swing.JFrame {
 
     /**
@@ -46,6 +39,11 @@ public class TelaLogin extends javax.swing.JFrame {
         jButtonEntrar.setBounds(183, 200, 70, 23);
 
         jButtonSair.setText("Sair");
+        jButtonSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSairActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButtonSair);
         jButtonSair.setBounds(270, 200, 60, 23);
 
@@ -74,10 +72,21 @@ public class TelaLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextFieldUsuarioActionPerformed
 
     private void jButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEntrarActionPerformed
+       // if(jTextFieldUsuario.getText().equals("AQUI PODEMOS PASSAR A STRING DO USUARIO CADASTRADO")
+
         // AQUI INSTANCIAMOS A TELA DO IMC USUARIO
         // chamamos a instância  .setVisible(true);
         // dispose();       comando pra fechar tela
+        
+       // else{
+           // JOptionPane.showMessageDialog(rootPane, "Senha inválida!");  //comando que vai exibir na tela um pop-up
+        //} 
     }//GEN-LAST:event_jButtonEntrarActionPerformed
+
+    private void jButtonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSairActionPerformed
+        System.exit(0);
+        //Fechar o sistema
+    }//GEN-LAST:event_jButtonSairActionPerformed
 
     /**
      * @param args the command line arguments
