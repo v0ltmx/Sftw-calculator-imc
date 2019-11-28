@@ -1,8 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+Escola Agrícola de Jundiaí - POO2k19.2
+Autores: @Luan Souza
+         @Lucas Gabriel
+         Está incompleta a implementação...
+*/
 package controlador;
 
 import com.jfoenix.controls.JFXButton;
