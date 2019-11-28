@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="telaCad" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorIMC">
+   <center>
+      <AnchorPane fx:id="cadastrar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: beige;">
+         <children>
+            <Label layoutX="231.0" layoutY="14.0" text="Calculadora de IMC">
+               <font>
+                  <Font name="Segoe UI Light" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton id="cadastrar" fx:id="cadastrarButton" layoutX="272.0" layoutY="333.0" onAction="#cadastrar" ripplerFill="#4959a9" text="Cadastrar" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox id="sexo" fx:id="sexoCad" labelFloat="true" layoutX="414.0" layoutY="119.0" prefHeight="25.0" prefWidth="87.0" promptText="Sexo" />
+            <JFXDatePicker fx:id="dataCad" defaultColor="#4059a9" layoutX="366.0" layoutY="245.0" promptText="Insira a data da consulta" />
+            <TextField fx:id="nomeCad" layoutX="115.0" layoutY="106.0" promptText="nome" />
+            <TextField fx:id="pesoCad" layoutX="112.0" layoutY="188.0" promptText="peso" />
+            <TextField fx:id="alturaCad" layoutX="112.0" layoutY="258.0" promptText="altura" />
+            <TextField fx:id="idadeCad" layoutX="377.0" layoutY="189.0" promptText="idade" />
+            <JFXButton fx:id="voltar" layoutX="414.0" layoutY="335.0" onAction="#voltar" text="Voltar" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
