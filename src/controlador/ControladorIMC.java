@@ -1,4 +1,8 @@
-
+/*
+Escola Agrícola de Jundiaí - POO2k19.2
+Autores: @Luan Souza
+         @Lucas Gabriel
+*/
 package controlador;
 
 //JFX imports para serem usados logo mais
